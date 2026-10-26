@@ -1,0 +1,352 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Sat May 24 12:29:01 2025
+| Host         : muxen1-115.ad.liu.se running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : report_timing -nworst 5 -path_type full -input_pins -file timing_5worst.txt
+| Design       : AwesomeComputer
+| Device       : 7a35ti-cpg236
+| Speed File   : -1L  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (VIOLATED) :        -0.166ns  (required time - arrival time)
+  Source:                 U2/U2/RM_reg[5][14]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            U2/flag_Z_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        10.172ns  (logic 5.329ns (52.389%)  route 4.843ns (47.611%))
+  Logic Levels:           7  (DSP48E1=1 LUT5=1 LUT6=4 MUXF7=1)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.787ns = ( 14.787 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.085ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+                         propagated clock network latency
+                                                      5.085     5.085    
+    SLICE_X44Y38         FDRE                         0.000     5.085 r  U2/U2/RM_reg[5][14]/C
+    SLICE_X44Y38         FDRE (Prop_fdre_C_Q)         0.456     5.541 r  U2/U2/RM_reg[5][14]/Q
+                         net (fo=2, routed)           1.068     6.609    U2/U2/RM_reg[5][14]
+    SLICE_X51Y38                                                      r  U2/U2/Z2[14]_i_4/I3
+    SLICE_X51Y38         LUT6 (Prop_lut6_I3_O)        0.124     6.733 r  U2/U2/Z2[14]_i_4/O
+                         net (fo=1, routed)           1.100     7.833    U2/U2/Z2[14]_i_4_n_0
+    SLICE_X51Y40                                                      r  U2/U2/Z2[14]_i_1/I3
+    SLICE_X51Y40         LUT6 (Prop_lut6_I3_O)        0.124     7.957 r  U2/U2/Z2[14]_i_1/O
+                         net (fo=15, routed)          0.570     8.527    U2/U4/dm_input[14]
+    DSP48_X1Y14                                                       r  U2/U4/result0/A[14]
+    DSP48_X1Y14          DSP48E1 (Prop_dsp48e1_A[14]_P[10])
+                                                      3.841    12.368 f  U2/U4/result0/P[10]
+                         net (fo=1, routed)           0.824    13.192    U2/U4/result0_n_95
+    SLICE_X57Y32                                                      f  U2/U4/D2[10]_i_2/I0
+    SLICE_X57Y32         LUT5 (Prop_lut5_I0_O)        0.124    13.316 f  U2/U4/D2[10]_i_2/O
+                         net (fo=1, routed)           0.000    13.316    U2/U4/D2[10]_i_2_n_0
+    SLICE_X57Y32                                                      f  U2/U4/D2_reg[10]_i_1/I0
+    SLICE_X57Y32         MUXF7 (Prop_muxf7_I0_O)      0.238    13.554 f  U2/U4/D2_reg[10]_i_1/O
+                         net (fo=2, routed)           0.972    14.526    U2/U4/result[10]
+    SLICE_X57Y34                                                      f  U2/U4/flag_Z_i_4_comp/I0
+    SLICE_X57Y34         LUT6 (Prop_lut6_I0_O)        0.298    14.824 f  U2/U4/flag_Z_i_4_comp/O
+                         net (fo=1, routed)           0.309    15.133    U2/U4/flag_Z_i_4_n_0
+    SLICE_X54Y34                                                      f  U2/U4/flag_Z_i_1_comp_1/I3
+    SLICE_X54Y34         LUT6 (Prop_lut6_I3_O)        0.124    15.257 r  U2/U4/flag_Z_i_1_comp_1/O
+                         net (fo=1, routed)           0.000    15.257    U2/U4_n_47
+    SLICE_X54Y34         FDRE                                         r  U2/flag_Z_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+                         propagated clock network latency
+                                                      4.787    14.787    
+                         clock pessimism              0.260    15.047    
+                         clock uncertainty           -0.035    15.012    
+    SLICE_X54Y34         FDRE (Setup_fdre_C_D)        0.079    15.091    U2/flag_Z_reg
+  -------------------------------------------------------------------
+                         required time                         15.091    
+                         arrival time                         -15.257    
+  -------------------------------------------------------------------
+                         slack                                 -0.166    
+
+Slack (VIOLATED) :        -0.166ns  (required time - arrival time)
+  Source:                 U2/U2/RM_reg[5][14]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            U2/flag_Z_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        10.172ns  (logic 5.329ns (52.389%)  route 4.843ns (47.611%))
+  Logic Levels:           7  (DSP48E1=1 LUT5=1 LUT6=4 MUXF7=1)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.787ns = ( 14.787 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.085ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+                         propagated clock network latency
+                                                      5.085     5.085    
+    SLICE_X44Y38         FDRE                         0.000     5.085 r  U2/U2/RM_reg[5][14]/C
+    SLICE_X44Y38         FDRE (Prop_fdre_C_Q)         0.456     5.541 f  U2/U2/RM_reg[5][14]/Q
+                         net (fo=2, routed)           1.068     6.609    U2/U2/RM_reg[5][14]
+    SLICE_X51Y38                                                      f  U2/U2/Z2[14]_i_4/I3
+    SLICE_X51Y38         LUT6 (Prop_lut6_I3_O)        0.124     6.733 f  U2/U2/Z2[14]_i_4/O
+                         net (fo=1, routed)           1.100     7.833    U2/U2/Z2[14]_i_4_n_0
+    SLICE_X51Y40                                                      f  U2/U2/Z2[14]_i_1/I3
+    SLICE_X51Y40         LUT6 (Prop_lut6_I3_O)        0.124     7.957 f  U2/U2/Z2[14]_i_1/O
+                         net (fo=15, routed)          0.570     8.527    U2/U4/dm_input[14]
+    DSP48_X1Y14                                                       f  U2/U4/result0/A[14]
+    DSP48_X1Y14          DSP48E1 (Prop_dsp48e1_A[14]_P[10])
+                                                      3.841    12.368 f  U2/U4/result0/P[10]
+                         net (fo=1, routed)           0.824    13.192    U2/U4/result0_n_95
+    SLICE_X57Y32                                                      f  U2/U4/D2[10]_i_2/I0
+    SLICE_X57Y32         LUT5 (Prop_lut5_I0_O)        0.124    13.316 f  U2/U4/D2[10]_i_2/O
+                         net (fo=1, routed)           0.000    13.316    U2/U4/D2[10]_i_2_n_0
+    SLICE_X57Y32                                                      f  U2/U4/D2_reg[10]_i_1/I0
+    SLICE_X57Y32         MUXF7 (Prop_muxf7_I0_O)      0.238    13.554 f  U2/U4/D2_reg[10]_i_1/O
+                         net (fo=2, routed)           0.972    14.526    U2/U4/result[10]
+    SLICE_X57Y34                                                      f  U2/U4/flag_Z_i_4_comp/I0
+    SLICE_X57Y34         LUT6 (Prop_lut6_I0_O)        0.298    14.824 f  U2/U4/flag_Z_i_4_comp/O
+                         net (fo=1, routed)           0.309    15.133    U2/U4/flag_Z_i_4_n_0
+    SLICE_X54Y34                                                      f  U2/U4/flag_Z_i_1_comp_1/I3
+    SLICE_X54Y34         LUT6 (Prop_lut6_I3_O)        0.124    15.257 r  U2/U4/flag_Z_i_1_comp_1/O
+                         net (fo=1, routed)           0.000    15.257    U2/U4_n_47
+    SLICE_X54Y34         FDRE                                         r  U2/flag_Z_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+                         propagated clock network latency
+                                                      4.787    14.787    
+                         clock pessimism              0.260    15.047    
+                         clock uncertainty           -0.035    15.012    
+    SLICE_X54Y34         FDRE (Setup_fdre_C_D)        0.079    15.091    U2/flag_Z_reg
+  -------------------------------------------------------------------
+                         required time                         15.091    
+                         arrival time                         -15.257    
+  -------------------------------------------------------------------
+                         slack                                 -0.166    
+
+Slack (VIOLATED) :        -0.166ns  (required time - arrival time)
+  Source:                 U2/U2/RM_reg[5][14]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            U2/flag_Z_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        10.172ns  (logic 5.329ns (52.389%)  route 4.843ns (47.611%))
+  Logic Levels:           7  (DSP48E1=1 LUT5=1 LUT6=4 MUXF7=1)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.787ns = ( 14.787 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.085ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+                         propagated clock network latency
+                                                      5.085     5.085    
+    SLICE_X44Y38         FDRE                         0.000     5.085 r  U2/U2/RM_reg[5][14]/C
+    SLICE_X44Y38         FDRE (Prop_fdre_C_Q)         0.456     5.541 r  U2/U2/RM_reg[5][14]/Q
+                         net (fo=2, routed)           1.068     6.609    U2/U2/RM_reg[5][14]
+    SLICE_X51Y38                                                      r  U2/U2/Z2[14]_i_4/I3
+    SLICE_X51Y38         LUT6 (Prop_lut6_I3_O)        0.124     6.733 r  U2/U2/Z2[14]_i_4/O
+                         net (fo=1, routed)           1.100     7.833    U2/U2/Z2[14]_i_4_n_0
+    SLICE_X51Y40                                                      r  U2/U2/Z2[14]_i_1/I3
+    SLICE_X51Y40         LUT6 (Prop_lut6_I3_O)        0.124     7.957 r  U2/U2/Z2[14]_i_1/O
+                         net (fo=15, routed)          0.570     8.527    U2/U4/dm_input[14]
+    DSP48_X1Y14                                                       r  U2/U4/result0/A[14]
+    DSP48_X1Y14          DSP48E1 (Prop_dsp48e1_A[14]_P[10])
+                                                      3.841    12.368 r  U2/U4/result0/P[10]
+                         net (fo=1, routed)           0.824    13.192    U2/U4/result0_n_95
+    SLICE_X57Y32                                                      r  U2/U4/D2[10]_i_2/I0
+    SLICE_X57Y32         LUT5 (Prop_lut5_I0_O)        0.124    13.316 r  U2/U4/D2[10]_i_2/O
+                         net (fo=1, routed)           0.000    13.316    U2/U4/D2[10]_i_2_n_0
+    SLICE_X57Y32                                                      r  U2/U4/D2_reg[10]_i_1/I0
+    SLICE_X57Y32         MUXF7 (Prop_muxf7_I0_O)      0.238    13.554 r  U2/U4/D2_reg[10]_i_1/O
+                         net (fo=2, routed)           0.972    14.526    U2/U4/result[10]
+    SLICE_X57Y34                                                      r  U2/U4/flag_Z_i_4_comp/I0
+    SLICE_X57Y34         LUT6 (Prop_lut6_I0_O)        0.298    14.824 r  U2/U4/flag_Z_i_4_comp/O
+                         net (fo=1, routed)           0.309    15.133    U2/U4/flag_Z_i_4_n_0
+    SLICE_X54Y34                                                      r  U2/U4/flag_Z_i_1_comp_1/I3
+    SLICE_X54Y34         LUT6 (Prop_lut6_I3_O)        0.124    15.257 f  U2/U4/flag_Z_i_1_comp_1/O
+                         net (fo=1, routed)           0.000    15.257    U2/U4_n_47
+    SLICE_X54Y34         FDRE                                         f  U2/flag_Z_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+                         propagated clock network latency
+                                                      4.787    14.787    
+                         clock pessimism              0.260    15.047    
+                         clock uncertainty           -0.035    15.012    
+    SLICE_X54Y34         FDRE (Setup_fdre_C_D)        0.079    15.091    U2/flag_Z_reg
+  -------------------------------------------------------------------
+                         required time                         15.091    
+                         arrival time                         -15.257    
+  -------------------------------------------------------------------
+                         slack                                 -0.166    
+
+Slack (VIOLATED) :        -0.166ns  (required time - arrival time)
+  Source:                 U2/U2/RM_reg[5][14]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            U2/flag_Z_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        10.172ns  (logic 5.329ns (52.389%)  route 4.843ns (47.611%))
+  Logic Levels:           7  (DSP48E1=1 LUT5=1 LUT6=4 MUXF7=1)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.787ns = ( 14.787 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.085ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+                         propagated clock network latency
+                                                      5.085     5.085    
+    SLICE_X44Y38         FDRE                         0.000     5.085 r  U2/U2/RM_reg[5][14]/C
+    SLICE_X44Y38         FDRE (Prop_fdre_C_Q)         0.456     5.541 f  U2/U2/RM_reg[5][14]/Q
+                         net (fo=2, routed)           1.068     6.609    U2/U2/RM_reg[5][14]
+    SLICE_X51Y38                                                      f  U2/U2/Z2[14]_i_4/I3
+    SLICE_X51Y38         LUT6 (Prop_lut6_I3_O)        0.124     6.733 f  U2/U2/Z2[14]_i_4/O
+                         net (fo=1, routed)           1.100     7.833    U2/U2/Z2[14]_i_4_n_0
+    SLICE_X51Y40                                                      f  U2/U2/Z2[14]_i_1/I3
+    SLICE_X51Y40         LUT6 (Prop_lut6_I3_O)        0.124     7.957 f  U2/U2/Z2[14]_i_1/O
+                         net (fo=15, routed)          0.570     8.527    U2/U4/dm_input[14]
+    DSP48_X1Y14                                                       f  U2/U4/result0/A[14]
+    DSP48_X1Y14          DSP48E1 (Prop_dsp48e1_A[14]_P[10])
+                                                      3.841    12.368 r  U2/U4/result0/P[10]
+                         net (fo=1, routed)           0.824    13.192    U2/U4/result0_n_95
+    SLICE_X57Y32                                                      r  U2/U4/D2[10]_i_2/I0
+    SLICE_X57Y32         LUT5 (Prop_lut5_I0_O)        0.124    13.316 r  U2/U4/D2[10]_i_2/O
+                         net (fo=1, routed)           0.000    13.316    U2/U4/D2[10]_i_2_n_0
+    SLICE_X57Y32                                                      r  U2/U4/D2_reg[10]_i_1/I0
+    SLICE_X57Y32         MUXF7 (Prop_muxf7_I0_O)      0.238    13.554 r  U2/U4/D2_reg[10]_i_1/O
+                         net (fo=2, routed)           0.972    14.526    U2/U4/result[10]
+    SLICE_X57Y34                                                      r  U2/U4/flag_Z_i_4_comp/I0
+    SLICE_X57Y34         LUT6 (Prop_lut6_I0_O)        0.298    14.824 r  U2/U4/flag_Z_i_4_comp/O
+                         net (fo=1, routed)           0.309    15.133    U2/U4/flag_Z_i_4_n_0
+    SLICE_X54Y34                                                      r  U2/U4/flag_Z_i_1_comp_1/I3
+    SLICE_X54Y34         LUT6 (Prop_lut6_I3_O)        0.124    15.257 f  U2/U4/flag_Z_i_1_comp_1/O
+                         net (fo=1, routed)           0.000    15.257    U2/U4_n_47
+    SLICE_X54Y34         FDRE                                         f  U2/flag_Z_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+                         propagated clock network latency
+                                                      4.787    14.787    
+                         clock pessimism              0.260    15.047    
+                         clock uncertainty           -0.035    15.012    
+    SLICE_X54Y34         FDRE (Setup_fdre_C_D)        0.079    15.091    U2/flag_Z_reg
+  -------------------------------------------------------------------
+                         required time                         15.091    
+                         arrival time                         -15.257    
+  -------------------------------------------------------------------
+                         slack                                 -0.166    
+
+Slack (VIOLATED) :        -0.143ns  (required time - arrival time)
+  Source:                 U2/U2/RM_reg[6][14]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            U2/flag_Z_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        10.148ns  (logic 5.329ns (52.511%)  route 4.819ns (47.489%))
+  Logic Levels:           7  (DSP48E1=1 LUT5=1 LUT6=4 MUXF7=1)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.787ns = ( 14.787 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.085ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+                         propagated clock network latency
+                                                      5.085     5.085    
+    SLICE_X47Y38         FDRE                         0.000     5.085 r  U2/U2/RM_reg[6][14]/C
+    SLICE_X47Y38         FDRE (Prop_fdre_C_Q)         0.456     5.541 r  U2/U2/RM_reg[6][14]/Q
+                         net (fo=2, routed)           1.044     6.585    U2/U2/RM_reg[6][14]
+    SLICE_X51Y38                                                      r  U2/U2/Z2[14]_i_4/I1
+    SLICE_X51Y38         LUT6 (Prop_lut6_I1_O)        0.124     6.709 r  U2/U2/Z2[14]_i_4/O
+                         net (fo=1, routed)           1.100     7.809    U2/U2/Z2[14]_i_4_n_0
+    SLICE_X51Y40                                                      r  U2/U2/Z2[14]_i_1/I3
+    SLICE_X51Y40         LUT6 (Prop_lut6_I3_O)        0.124     7.933 r  U2/U2/Z2[14]_i_1/O
+                         net (fo=15, routed)          0.570     8.503    U2/U4/dm_input[14]
+    DSP48_X1Y14                                                       r  U2/U4/result0/A[14]
+    DSP48_X1Y14          DSP48E1 (Prop_dsp48e1_A[14]_P[10])
+                                                      3.841    12.344 f  U2/U4/result0/P[10]
+                         net (fo=1, routed)           0.824    13.168    U2/U4/result0_n_95
+    SLICE_X57Y32                                                      f  U2/U4/D2[10]_i_2/I0
+    SLICE_X57Y32         LUT5 (Prop_lut5_I0_O)        0.124    13.292 f  U2/U4/D2[10]_i_2/O
+                         net (fo=1, routed)           0.000    13.292    U2/U4/D2[10]_i_2_n_0
+    SLICE_X57Y32                                                      f  U2/U4/D2_reg[10]_i_1/I0
+    SLICE_X57Y32         MUXF7 (Prop_muxf7_I0_O)      0.238    13.530 f  U2/U4/D2_reg[10]_i_1/O
+                         net (fo=2, routed)           0.972    14.502    U2/U4/result[10]
+    SLICE_X57Y34                                                      f  U2/U4/flag_Z_i_4_comp/I0
+    SLICE_X57Y34         LUT6 (Prop_lut6_I0_O)        0.298    14.800 f  U2/U4/flag_Z_i_4_comp/O
+                         net (fo=1, routed)           0.309    15.110    U2/U4/flag_Z_i_4_n_0
+    SLICE_X54Y34                                                      f  U2/U4/flag_Z_i_1_comp_1/I3
+    SLICE_X54Y34         LUT6 (Prop_lut6_I3_O)        0.124    15.234 r  U2/U4/flag_Z_i_1_comp_1/O
+                         net (fo=1, routed)           0.000    15.234    U2/U4_n_47
+    SLICE_X54Y34         FDRE                                         r  U2/flag_Z_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+                         propagated clock network latency
+                                                      4.787    14.787    
+                         clock pessimism              0.260    15.047    
+                         clock uncertainty           -0.035    15.012    
+    SLICE_X54Y34         FDRE (Setup_fdre_C_D)        0.079    15.091    U2/flag_Z_reg
+  -------------------------------------------------------------------
+                         required time                         15.091    
+                         arrival time                         -15.234    
+  -------------------------------------------------------------------
+                         slack                                 -0.143    
+
+
+
+

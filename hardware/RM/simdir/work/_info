@@ -1,0 +1,176 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/lovbo105/Kurser/datkon-proj/kod/hardware/RM/simdir
+T_opt
+!s110 1744642218
+V^QZD<IcAj6P^nOQ@zlXRA0
+Z2 04 5 3 work rm_tb sim 1
+=1-001b213b2c22-67fd20a9-d9f8b-2e767
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.3;73
+R1
+T_opt1
+!s110 1744707782
+V2NCnOOB]_LdHXOo8g23H81
+R2
+=1-001b213b2b95-67fe20c6-892ad-1766f
+R3
+R4
+R5
+n@_opt1
+R6
+R1
+T_opt2
+!s110 1746971708
+VMROOBdNG@Rcm9fO8=IVF61
+R2
+=1-001b213b2bc4-6820ac3b-93620-25bb4
+R3
+R4
+R5
+n@_opt2
+R6
+Erm
+w1744641935
+Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 32
+R1
+Z10 8../RM.vhd
+Z11 F../RM.vhd
+l0
+L6 1
+Vd8<E[f1o4Z@2Ah3kO<:g61
+!s100 oeI7?m0O]9VJ?bJflCYn_1
+Z12 OL;C;2021.3;73
+32
+!s110 1744641940
+!i10b 1
+!s108 1744641940.000000
+Z13 !s90 ../RM.vhd|
+Z14 !s107 ../RM.vhd|
+!i113 0
+Z15 tExplicit 1 CvgOpt 0
+Asim
+w1744640336
+R7
+R8
+R9
+DEx4 work 2 rm 0 22 caRDD`B3G7;NgiKkTC3E^1
+!i122 23
+l39
+L8 101
+V[@R`^haEAP8FJaP@<:l8V1
+!s100 QAS0UO4fR_HMm6n9=QP9[0
+R12
+32
+!s110 1744640356
+!i10b 1
+!s108 1744640356.000000
+Z16 !s90 ../RM_tb.vhd|
+Z17 !s107 ../RM_tb.vhd|
+!i113 0
+R15
+Z18 F../RM_tb.vhd
+Z19 8../RM_tb.vhd
+Erm_comp
+Z20 w1746971336
+R7
+R8
+R9
+!i122 55
+Z21 d/home/ivajo851/TSEA 83/G36/kod/hardware/RM/simdir
+R10
+R11
+l0
+L6 1
+VX8;A;aC03Y<Z:hoeO_YYZ3
+!s100 ?e_n`z?;nWNDN5?:b408[3
+R12
+32
+Z22 !s110 1746971706
+!i10b 1
+Z23 !s108 1746971706.000000
+R13
+R14
+!i113 0
+R15
+Afunc
+R7
+R8
+R9
+DEx4 work 7 rm_comp 0 22 X8;A;aC03Y<Z:hoeO_YYZ3
+!i122 55
+l52
+L26 62
+V=XZMRDQCXiAk08M4:VA3k0
+!s100 g1h]cENhM<3E]CczXU`X21
+R12
+32
+R22
+!i10b 1
+R23
+R13
+R14
+!i113 0
+R15
+Erm_tb
+Z24 w1746971704
+R7
+R8
+R9
+!i122 56
+R21
+R19
+R18
+l0
+L5 1
+V0bSDYaFA<94oLM=NJMm5@2
+!s100 J@k`:c26iK>WlQbnCWeOL1
+R12
+32
+R22
+!i10b 1
+R23
+R16
+R17
+!i113 0
+R15
+Asim
+R7
+R8
+R9
+DEx4 work 5 rm_tb 0 22 0bSDYaFA<94oLM=NJMm5@2
+!i122 56
+l44
+L8 159
+VM6B4k4gfL0;BPNjCo>7LQ1
+!s100 gda8QgcX:WnOJQM_AK@AR2
+R12
+32
+R22
+!i10b 1
+R23
+R16
+R17
+!i113 0
+R15

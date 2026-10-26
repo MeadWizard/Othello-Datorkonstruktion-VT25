@@ -1,0 +1,34 @@
+# //  ModelSim SE-64 2021.3 Jul 13 2021 Linux 4.18.0-553.53.1.el8_10.x86_64
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -voptargs="+acc" -L work work.awesomecomputer_tb 
+# Start time: 14:27:07 on May 21,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "KBD_comp(behavioral)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.awesomecomputer_tb(sim)#1
+# Loading work.awesomecomputer(behavioral)#1
+# Loading work.dm_comp(behavioral)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# Loading work.vga_comp(behavioral)#1
+# Loading work.char_rom(behavioral)#1
+# Loading work.kbd_comp(behavioral)#1
+# End time: 14:27:22 on May 21,2025, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0

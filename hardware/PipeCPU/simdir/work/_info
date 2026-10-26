@@ -1,0 +1,298 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.3 2021.07, Jul 13 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/ivajo851/TSEA 83/G36/kod/hardware/PipeCPU/simdir
+T_opt
+!s110 1747835440
+VDW4zaM4FcGM13mn2LXoi?1
+Z2 04 10 3 work pipecpu_tb sim 1
+=1-001b213b2b95-682dda30-4ea69-4230d
+Z3 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.3;73
+R1
+T_opt1
+!s110 1747837470
+VH:jSJRa]:z1DDMUYk5z_A1
+R2
+=1-001b213b2b95-682de21e-3b89d-4493f
+R3
+o-quiet -auto_acc_if_foreign -work work
+R4
+n@_opt1
+R5
+Ealu_comp
+Z6 w1747830009
+Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 81
+R1
+Z10 8../../ALU/ALU.vhd
+Z11 F../../ALU/ALU.vhd
+l0
+L8 1
+VJc<ghzOfRd715I4D;n^LU0
+!s100 nE@C4OKc7M2_=@F[zD26:0
+Z12 OL;C;2021.3;73
+32
+Z13 !s110 1747837469
+!i10b 1
+Z14 !s108 1747837469.000000
+Z15 !s90 -reportprogress|300|+acc|../../ALU/ALU.vhd|
+Z16 !s107 ../../ALU/ALU.vhd|
+!i113 0
+Z17 o+acc
+Z18 tExplicit 1 CvgOpt 0
+Abehavioral
+R7
+R8
+R9
+DEx4 work 8 alu_comp 0 22 Jc<ghzOfRd715I4D;n^LU0
+!i122 81
+l54
+L32 97
+V>ckUiHiO8YIcaz;VJ4MNO0
+!s100 4mRz1Ca[a4jkaBMLaO0560
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Ecu_comp
+R6
+R7
+R8
+R9
+!i122 82
+R1
+Z19 8../../CU/ControlUnit.vhd
+Z20 F../../CU/ControlUnit.vhd
+l0
+L8 1
+VEX5K]HL2i_4EQ`UzE2llY3
+!s100 JoQ@S9oJXSZm5DoJQ@<h02
+R12
+32
+R13
+!i10b 1
+R14
+Z21 !s90 -reportprogress|300|+acc|../../CU/ControlUnit.vhd|
+Z22 !s107 ../../CU/ControlUnit.vhd|
+!i113 0
+R17
+R18
+Abehavioral
+R7
+R8
+R9
+DEx4 work 7 cu_comp 0 22 EX5K]HL2i_4EQ`UzE2llY3
+!i122 82
+l67
+L22 106
+VH0l[QVL^5^5ZiRcl1>P^S2
+!s100 Zl=OAhEGbdUS?QC>4[N^=2
+R12
+32
+R13
+!i10b 1
+R14
+R21
+R22
+!i113 0
+R17
+R18
+Epipecpu_comp
+Z23 w1747832756
+R7
+R8
+R9
+!i122 83
+R1
+Z24 8../pipeCPU.vhd
+Z25 F../pipeCPU.vhd
+l0
+L8 1
+V;6?bcoCm_2MiTME59UNPE3
+!s100 @9bl6fKB>lXAbDA7?oYDG0
+R12
+32
+R13
+!i10b 1
+R14
+Z26 !s90 -reportprogress|300|+acc|../pipeCPU.vhd|
+Z27 !s107 ../pipeCPU.vhd|
+!i113 0
+R17
+R18
+Afunc
+R7
+R8
+R9
+DEx4 work 12 pipecpu_comp 0 22 ;6?bcoCm_2MiTME59UNPE3
+!i122 83
+l170
+L27 336
+VMASzLX:FdYdM<@6i1:>Sd0
+!s100 z3mjbHGVM5kBLlGUhT4>31
+R12
+32
+R13
+!i10b 1
+R14
+R26
+R27
+!i113 0
+R17
+R18
+Epipecpu_tb
+Z28 w1747837465
+R7
+R8
+R9
+!i122 86
+R1
+Z29 8../pipeCPU_tb.vhd
+Z30 F../pipeCPU_tb.vhd
+l0
+L8 1
+Vn94BYO7Xj`RWVDcBYhP@`0
+!s100 PDa8jbmB@GbL@5J:b_Nk10
+R12
+32
+R13
+!i10b 1
+R14
+Z31 !s90 -reportprogress|300|+acc|../pipeCPU_tb.vhd|
+Z32 !s107 ../pipeCPU_tb.vhd|
+!i113 0
+R17
+R18
+Asim
+R7
+R8
+R9
+DEx4 work 10 pipecpu_tb 0 22 n94BYO7Xj`RWVDcBYhP@`0
+!i122 86
+l49
+L11 75
+VTTA;Uj26a`3:F953SH_^S3
+!s100 cE[<`cJcNWcNWPf0;>0z23
+R12
+32
+R13
+!i10b 1
+R14
+R31
+R32
+!i113 0
+R17
+R18
+Epm_comp
+Z33 w1747836936
+R7
+R8
+R9
+!i122 84
+R1
+Z34 8../../PM/PM.vhd
+Z35 F../../PM/PM.vhd
+l0
+L8 1
+VhT<z0195e`dOMUBC`ZzFO3
+!s100 ;mfRiHaaadO:dGmUCEd?51
+R12
+32
+R13
+!i10b 1
+R14
+Z36 !s90 -reportprogress|300|+acc|../../PM/PM.vhd|
+Z37 !s107 ../../PM/PM.vhd|
+!i113 0
+R17
+R18
+Afunc
+R7
+R8
+R9
+DEx4 work 7 pm_comp 0 22 hT<z0195e`dOMUBC`ZzFO3
+!i122 84
+l108
+L15 99
+VaKz^]lf9BlnPPfB4Kf;[g1
+!s100 G<EKJjCCTgTWLTL;SIKTQ0
+R12
+32
+R13
+!i10b 1
+R14
+R36
+R37
+!i113 0
+R17
+R18
+Erm_comp
+Z38 w1747137069
+R7
+R8
+R9
+!i122 85
+R1
+Z39 8../../RM/RM.vhd
+Z40 F../../RM/RM.vhd
+l0
+L6 1
+VMOSH;n]NE`ogTlA]FUd3A1
+!s100 E?E3n[N5a4R3gSPRnBCQF2
+R12
+32
+R13
+!i10b 1
+R14
+Z41 !s90 -reportprogress|300|+acc|../../RM/RM.vhd|
+Z42 !s107 ../../RM/RM.vhd|
+!i113 0
+R17
+R18
+Afunc
+R7
+R8
+R9
+DEx4 work 7 rm_comp 0 22 MOSH;n]NE`ogTlA]FUd3A1
+!i122 85
+l52
+L26 62
+VJBT3DzHVQcSR6M?Cb^dF23
+!s100 ^@i6UL2;XegTe;STGF3j`1
+R12
+32
+R13
+!i10b 1
+R14
+R41
+R42
+!i113 0
+R17
+R18

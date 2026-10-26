@@ -1,0 +1,166 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.3 2021.07, Jul 13 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/lovbo105/Kurser/datkon-proj/kod/hardware/Keyboard/simdir
+T_opt
+!s110 1745917294
+Vm2]6ZKB^OzH6JMh[Y9kjH1
+Z2 04 5 3 work kb_tb sim 1
+=1-001b213b2bb7-6810956e-290ee-14d70
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.3;73
+R1
+T_opt1
+!s110 1746970174
+VdFIGRZQ=loSdMzL:=LalL3
+R2
+=1-001b213b2bc4-6820a63e-950d-2412a
+R3
+R4
+R5
+n@_opt1
+R6
+Ekb_tb
+Z7 w1745927202
+Z8 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 44
+Z11 d/home/ivajo851/TSEA 83/G36/kod/hardware/Keyboard/simdir
+Z12 8../KB_tb.vhd
+Z13 F../KB_tb.vhd
+l0
+L110 1
+VW21<>9T`LH@OA>U?KjVFc1
+!s100 ]8lAgk`I8X[B0>PI<Y@Yl2
+Z14 OL;C;2021.3;73
+32
+Z15 !s110 1746970172
+!i10b 1
+Z16 !s108 1746970172.000000
+Z17 !s90 ../KB_tb.vhd|
+Z18 !s107 ../KB_tb.vhd|
+!i113 0
+Z19 tExplicit 1 CvgOpt 0
+Asim
+R8
+R9
+R10
+DEx4 work 5 kb_tb 0 22 W21<>9T`LH@OA>U?KjVFc1
+!i122 44
+l134
+L113 85
+V:3:fDOZ`ze@V>fDg0E<z;2
+!s100 YBOYOR;6XST_GSgYCb;N^1
+R14
+32
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R19
+Ekbd_comp
+Z20 w1745488616
+R8
+R9
+R10
+!i122 43
+R11
+Z21 8../KB_encoder.vhd
+Z22 F../KB_encoder.vhd
+l0
+L7 1
+VPm^H`nN[NM@<@SPH0>:WG0
+!s100 6M<zHY<EcI`L<AQbQOfHf0
+R14
+32
+R15
+!i10b 1
+R16
+Z23 !s90 ../KB_encoder.vhd|
+Z24 !s107 ../KB_encoder.vhd|
+!i113 0
+R19
+Abehavioral
+R8
+R9
+R10
+DEx4 work 8 kbd_comp 0 22 Pm^H`nN[NM@<@SPH0>:WG0
+!i122 43
+l33
+Z25 L18 119
+V]fCf@RdPj9XOUhKzB9:?@2
+!s100 F=?Pk<852dCzADfPA4`XF2
+R14
+32
+R15
+!i10b 1
+R16
+R23
+R24
+!i113 0
+R19
+Ekbd_enc
+Z26 w1744799584
+R8
+R9
+R10
+!i122 26
+R1
+R21
+R22
+l0
+L7 1
+VF>O7DXU2mJU^`WHkNe64S0
+!s100 O4H1n`?T9=?kl7U[R@Zni1
+R14
+32
+Z27 !s110 1744799868
+!i10b 1
+Z28 !s108 1744799868.000000
+R23
+R24
+!i113 0
+R19
+Abehavioral
+R8
+R9
+R10
+DEx4 work 7 kbd_enc 0 22 F>O7DXU2mJU^`WHkNe64S0
+!i122 26
+l33
+R25
+VWPZ7cFkdF]eHjCiZcl0NK0
+!s100 >WTTc4olc@^f_8;:R=nh<3
+R14
+32
+R27
+!i10b 1
+R28
+R23
+R24
+!i113 0
+R19

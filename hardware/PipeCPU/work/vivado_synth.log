@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed May 21 16:26:19 2025
+# Process ID: 281454
+# Current directory: /home/ivajo851/TSEA 83/G36/kod/hardware/PipeCPU/work
+# Command line: vivado -mode batch -source /courses/TSEA83/bin/build.tcl -notrace -journal vivado_synth.jou -log vivado_synth.log -tclargs synth pipeCPU.vhd ../ALU/ALU.vhd ../CU/ControlUnit.vhd ../PM/PM.vhd ../RM/RM.vhd Basys3.xdc
+# Log file: /home/ivajo851/TSEA 83/G36/kod/hardware/PipeCPU/work/vivado_synth.log
+# Journal file: /home/ivajo851/TSEA 83/G36/kod/hardware/PipeCPU/work/vivado_synth.jou
+# Running On: muxen1-113.ad.liu.se, OS: Linux, CPU Frequency: 2100.000 MHz, CPU Physical cores: 12, Host memory: 16198 MB
+#-----------------------------------------------------------
+source /courses/TSEA83/bin/build.tcl -notrace
+
+############################################################################
+#### Build script 'Version 1.2 - 2024-05-09'
+
+Doing synth
+
+############################################################################
+#### Synthesizing...
+
+Reading: pipeCPU.vhd
+Reading: ../ALU/ALU.vhd
+Reading: ../CU/ControlUnit.vhd
+Reading: ../PM/PM.vhd
+Reading: ../RM/RM.vhd
+Reading: Basys3.xdc
+ERROR: [Common 17-275] File does not exist [/home/ivajo851/TSEA 83/G36/kod/hardware/PipeCPU/Basys3.xdc]
+INFO: [Common 17-206] Exiting Vivado at Wed May 21 16:26:25 2025...

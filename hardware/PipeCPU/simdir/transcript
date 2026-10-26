@@ -1,0 +1,1079 @@
+# //  ModelSim SE-64 2021.3 Jul 13 2021 Linux 4.18.0-553.53.1.el8_10.x86_64
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -voptargs="+acc" -L work work.pipeCPU_tb 
+# Start time: 15:50:40 on May 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:47 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 15:50:47 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:47 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 15:50:47 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:47 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 15:50:47 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:47 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 15:50:47 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:47 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 15:50:47 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:50:47 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 15:50:47 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:50:47 on May 21,2025, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# vsim pipeCPU_tb 
+# Start time: 15:50:47 on May 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:51:18 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 15:51:18 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:51:18 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 15:51:18 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:51:18 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 15:51:19 on May 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:51:19 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 15:51:19 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:51:19 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 15:51:19 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:51:19 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 15:51:19 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:51:19 on May 21,2025, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 11
+# vsim pipeCPU_tb 
+# Start time: 15:51:19 on May 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:53:48 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 15:53:48 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:53:48 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 15:53:49 on May 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:53:49 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 15:53:49 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:53:49 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 15:53:49 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:53:49 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 15:53:49 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:53:49 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 15:53:49 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:53:49 on May 21,2025, Elapsed time: 0:02:30
+# Errors: 0, Warnings: 11
+# vsim pipeCPU_tb 
+# Start time: 15:53:49 on May 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:54:32 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 15:54:32 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:54:32 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 15:54:32 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:54:32 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 15:54:32 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:54:32 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 15:54:32 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:54:32 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 15:54:32 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:54:32 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 15:54:32 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:54:33 on May 21,2025, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 11
+# vsim pipeCPU_tb 
+# Start time: 15:54:33 on May 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:59:27 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 15:59:27 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:59:27 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 15:59:27 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:59:27 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 15:59:27 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:59:27 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 15:59:27 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:59:27 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 15:59:27 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 15:59:27 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 15:59:27 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:59:27 on May 21,2025, Elapsed time: 0:04:54
+# Errors: 0, Warnings: 11
+# vsim pipeCPU_tb 
+# Start time: 15:59:27 on May 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:24 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 16:02:24 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:24 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 16:02:24 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:24 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 16:02:25 on May 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:25 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 16:02:25 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:25 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 16:02:25 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:02:25 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 16:02:25 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:02:25 on May 21,2025, Elapsed time: 0:02:58
+# Errors: 0, Warnings: 11
+# vsim pipeCPU_tb 
+# Start time: 16:02:25 on May 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:06:57 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 16:06:58 on May 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:06:58 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 16:06:58 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:06:58 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 16:06:58 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:06:58 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 16:06:58 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:06:58 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 16:06:58 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:06:58 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 16:06:58 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:06:58 on May 21,2025, Elapsed time: 0:04:33
+# Errors: 0, Warnings: 11
+# vsim pipeCPU_tb 
+# Start time: 16:06:58 on May 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:56 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 16:08:56 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:56 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 16:08:56 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:56 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 16:08:56 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:56 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 16:08:56 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:56 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 16:08:56 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:08:56 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 16:08:56 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:08:56 on May 21,2025, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 11
+# vsim pipeCPU_tb 
+# Start time: 16:08:56 on May 21,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:15:43 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 16:15:43 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:15:43 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 16:15:43 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:15:43 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 16:15:43 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:15:43 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 16:15:43 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:15:43 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 16:15:43 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:15:43 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 16:15:43 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:15:43 on May 21,2025, Elapsed time: 0:06:47
+# Errors: 0, Warnings: 11
+# vsim pipeCPU_tb 
+# Start time: 16:15:43 on May 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+do progPipeCPU.do
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:24:29 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_comp
+# -- Compiling architecture Behavioral of ALU_comp
+# End time: 16:24:29 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:24:29 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../CU/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CU_comp
+# -- Compiling architecture Behavioral of CU_comp
+# End time: 16:24:29 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:24:29 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_comp
+# -- Compiling architecture func of pipeCPU_comp
+# End time: 16:24:29 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:24:29 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../PM/PM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PM_comp
+# -- Compiling architecture func of PM_comp
+# End time: 16:24:29 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:24:29 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../../RM/RM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RM_comp
+# -- Compiling architecture func of RM_comp
+# End time: 16:24:29 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 16:24:29 on May 21,2025
+# vcom -reportprogress 300 "+acc" ../pipeCPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeCPU_tb
+# -- Compiling architecture sim of pipeCPU_tb
+# End time: 16:24:29 on May 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:24:30 on May 21,2025, Elapsed time: 0:08:47
+# Errors: 0, Warnings: 11
+# vsim pipeCPU_tb 
+# Start time: 16:24:30 on May 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipecpu_tb(sim)#1
+# Loading work.pipecpu_comp(func)#1
+# Loading work.pm_comp(func)#1
+# Loading work.rm_comp(func)#1
+# Loading work.cu_comp(behavioral)#1
+# Loading work.alu_comp(behavioral)#1
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U2
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /pipecpu_tb/UUT/U1
+# End time: 16:26:03 on May 21,2025, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 11

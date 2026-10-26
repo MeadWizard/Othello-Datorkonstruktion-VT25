@@ -1,0 +1,181 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/lovbo105/Kurser/datkon-proj/kod/hardware/ALU/simdir
+T_opt
+!s110 1747040593
+VKDYdW:RaYj3C]X`<ojPW12
+Z2 04 6 3 work alu_tb sim 1
+=1-001b213b2bb7-6821b950-bd9d7-13e8e
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.3;73
+R1
+T_opt1
+!s110 1747043434
+Vk=hOfT@iC[JUKo<V?zF?V3
+R2
+=1-001b213b2bb7-6821c46a-10cf9-176bf
+R3
+R4
+R5
+n@_opt1
+R6
+Ealu
+Z7 w1747037989
+Z8 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 111
+R1
+Z11 8../ALU.vhd
+Z12 F../ALU.vhd
+l0
+L8 1
+VkeFBf_:G4::dh6Oo?@IZS3
+!s100 0XjP49h4FnM;i_2V@Vamf1
+Z13 OL;C;2021.3;73
+32
+Z14 !s110 1747041225
+!i10b 1
+Z15 !s108 1747041225.000000
+Z16 !s90 ../ALU.vhd|
+Z17 !s107 ../ALU.vhd|
+!i113 0
+Z18 tExplicit 1 CvgOpt 0
+Abehavioral
+R8
+R9
+R10
+DEx4 work 3 alu 0 22 keFBf_:G4::dh6Oo?@IZS3
+!i122 111
+l54
+Z19 L32 84
+V4zcAzA3dNP5z1z5adMM9l0
+!s100 Bg17?<=@K:DJ`TYjoCXO:1
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+Ealu_comp
+Z20 w1747043367
+R8
+R9
+R10
+!i122 115
+Z21 d/home/ivajo851/TSEA 83/G36/kod/hardware/ALU/simdir
+R11
+R12
+l0
+L8 1
+V`lVE<Qa>_MjzhMLT[ZG@?3
+!s100 nE@C4OKc7M2_=@F[zD26:0
+R13
+32
+Z22 !s110 1747043432
+!i10b 1
+Z23 !s108 1747043432.000000
+R16
+R17
+!i113 0
+R18
+Abehavioral
+R8
+R9
+R10
+DEx4 work 8 alu_comp 0 22 `lVE<Qa>_MjzhMLT[ZG@?3
+!i122 115
+l54
+R19
+VMUhcdg4<;OVB9mfnjo;F;1
+!s100 hK[?KOXVl2_J1haB2@a]^3
+R13
+32
+R22
+!i10b 1
+R23
+R16
+R17
+!i113 0
+R18
+Ealu_tb
+Z24 w1747043431
+R8
+R9
+R10
+!i122 116
+R21
+Z25 8../ALU_tb.vhd
+Z26 F../ALU_tb.vhd
+l0
+L8 1
+Vgi;9z93X2MQH;zIGHEFX81
+!s100 =]eaeKBX50PMXz@VEnGFD1
+R13
+32
+R22
+!i10b 1
+R23
+Z27 !s90 ../ALU_tb.vhd|
+Z28 !s107 ../ALU_tb.vhd|
+!i113 0
+R18
+Asim
+R8
+R9
+R10
+DEx4 work 6 alu_tb 0 22 gi;9z93X2MQH;zIGHEFX81
+!i122 116
+l62
+L11 245
+VSXCEKN_;ndiNG;Mkl<UKg1
+!s100 GhPjWiJSXZ2Hz?amYF49a2
+R13
+32
+R22
+!i10b 1
+R23
+R27
+R28
+!i113 0
+R18
