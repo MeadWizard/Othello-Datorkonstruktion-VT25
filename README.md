@@ -2,7 +2,7 @@
 # TSEA83 VT 2025, Grupp 36 - Othello
 
 Grupp 36 består av:
-Lovisa Bogeklint.
+Lovisa Bogeklint,
 Ivar Lenner,
 Embla Olin och
 Frida Strömberg 
